@@ -20,5 +20,5 @@ int main(int argc, char **argv){
 }
 
 uint32_t ntohl(uint32_t argv){
-	return (argv&0x000000FF) << 24 | (argv&0x0000FF00) << 8 | (argv&0x00FF0000) >> 8| (argv&0xFF000000) >> 24;
+	return (argv&0x0000FF00) << 8 | (argv&0x000000FF) << 24 | (argv&0xFF000000) >> 24 | (argv&0x00FF0000) >> 8;
 }
