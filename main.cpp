@@ -17,6 +17,9 @@ int main(int argc, char **argv){
 	c = ntohl(c);
 
 	printf("%u(0x%X) + %u(0x%X) = %u(0x%X)",a,a,c,c,a+c,a+c);
+
+	fclose(f1);
+	fclose(f2);
 }
 
 uint32_t ntohl(uint32_t argv){
